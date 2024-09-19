@@ -1,0 +1,117 @@
+// *================================================================
+//? Transitions
+// *================================================================
+
+@mixin defaultTransition {
+  transition: all 0.2s linear;
+}
+
+@mixin fastTransition {
+  transition: all 0.1s ease-in-out;
+}
+
+@mixin slowTransition {
+  transition: all 0.3s linear;
+}
+
+// *================================================================
+//? Hovers
+// *================================================================
+
+//? Mobile disabled hover
+@mixin hover {
+  @media (any-hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+// *================================================================
+//? Media queries
+// *================================================================
+
+@mixin media-extra-large {
+  @media screen and (min-width: $xl) {
+    @content;
+  }
+}
+
+// 1659-1280
+@mixin media-large {
+  @media screen and (max-width: $lg) {
+    @content;
+  }
+}
+
+// 1279-992
+@mixin media-medium {
+  @media screen and (max-width: $md) {
+    @content;
+  }
+}
+
+// 991-768
+@mixin media-small {
+  @media screen and (max-width: $sm) {
+    @content;
+  }
+}
+
+// 767-0 100%
+@mixin media-extra-small {
+  @media screen and (max-width: $xs) {
+    @content;
+  }
+}
+
+// min width
+@mixin media-min {
+  @media screen and (max-width: $xxs) {
+    @content;
+  }
+}
+
+// topography
+
+@mixin TTr-112 {
+  font-family: $ff_TTr;
+  font-size: 112px;
+  line-height: 112px;
+}
+
+@mixin TTr-84 {
+  font-family: $ff_TTr;
+  font-size: 84px;
+  line-height: 84px;
+}
+
+@mixin TTr-64 {
+  font-family: $ff_TTr;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+@mixin TTr-36 {
+  font-family: $ff_TTr;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+@mixin TTr-32 {
+  font-family: $ff_TTr;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+@mixin TTr-20 {
+  font-family: $ff_TTr;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+@mixin TTr-16 {
+  font-family: $ff_TTr;
+  font-size: 16px;
+  line-height: 19px;
+}

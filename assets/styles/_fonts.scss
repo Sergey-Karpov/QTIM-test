@@ -1,0 +1,17 @@
+/* stylelint-disable */
+//? Миксин для подключения шрифтов
+//* Подробнее: https://developer.mozilla.org/ru/docs/Web/CSS/font-family
+
+@mixin font-face($font-family, $weight, $style) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url("@/assets/fonts/#{$font-family}.woff") format("woff"),
+      url("@/assets/fonts/#{$font-family}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: $style;
+  }
+}
+
+//? Подключение шрифтов
+@include font-face("TTCommons-Regular", 400, normal);

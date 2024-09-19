@@ -1,0 +1,32 @@
+//? Основные цвета
+$main: #101010;
+$black: #101010;
+$dark-grey: #232323;
+$grey: #868686;
+$light-grey: #f3f3f3;
+
+$white: #ffffff;
+$green: #9effbf;
+$purple: #7941a7;
+$pink: #e2beff;
+$blue: #1059c8;
+
+//? По умолчанию
+$base_fz: 20px; //? Размер шрифта по умолчанию 20px
+$base_ff: "TTCommons-Regular", sans-serif; //? Шрифт по умолчанию
+$base_bg: $white; //? Цвет фона по умолчанию
+$base_color: $main; //? Цвет текста по умолчанию
+
+//? Переменные семейств шрифтов
+$ff_TTr: "TTCommons-Regular", sans-serif;
+
+//? Толщина семейства шрифтов
+$r: 400; // Regular
+
+//? Брейк-поинты
+$xl: 1920px; // Desktop and higher 1560
+$lg: 1659.5px; // Wide desktops
+$md: 1279.5px; // Laptops 912
+$sm: 991.5px; // Tablets
+$xs: 767.5px; // Mobile devices
+$xxs: 320px; // Min template device width
